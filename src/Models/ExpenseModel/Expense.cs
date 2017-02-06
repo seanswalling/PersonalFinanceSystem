@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IncomeModel
+namespace ExpenseModel
 {
-    class FinancialYear
+    class Expense
     {
-        private DateTime _yearStarTime;
-        private DateTime _yearEndTime;
+        private DateTime _date;
+        private double _amount;
     }
 }

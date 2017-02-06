@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExpenseModel
+namespace TransactionRecord
 {
-    public class ExpenseModel
+    public interface ITransactionRecord
     {
     }
 }

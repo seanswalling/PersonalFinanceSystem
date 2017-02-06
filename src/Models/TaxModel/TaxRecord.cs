@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace TaxModel
 {
-    public class YearlyTaxRecord
+    public class TaxRecord
     {
         private readonly int _year;
         private readonly double _income;
         private double _tax;
         private readonly TaxSystem _system = new TaxSystem();
 
-        public YearlyTaxRecord(double income, int year)
+        public TaxRecord(double income, int year)
         {
             _income = income;
             _year = year;

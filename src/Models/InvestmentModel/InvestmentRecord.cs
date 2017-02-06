@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IncomeModel
+namespace InvestmentModel
 {
-    public class YearlyIncomeRecord
+    public class InvestmentRecord
     {
-        private FinancialYear _finYear;
-        private List<Income> _income;
+        public List<Investment> Investments { get; set; }
     }
 }
