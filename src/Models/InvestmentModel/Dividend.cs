@@ -8,7 +8,7 @@ namespace InvestmentModel
 {
     class Dividend
     {
-        public Investment Investment { get; }
+        public Share Investment { get; }
         public double CentsPerShare { get; }
         public double Amount { get; }
         public double FrankingCredit { get; }

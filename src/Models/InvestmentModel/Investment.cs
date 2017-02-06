@@ -8,7 +8,6 @@ namespace InvestmentModel
 {
     public class Investment
     {
-        public String InvestmentType { get; set; }
         public int InvestmentNumber { get; }
         public Price InvestmentPrice { get; }
         public List<Price> HistoricalPrice { get; }
@@ -34,6 +33,13 @@ namespace InvestmentModel
         public Price GetLatestPrice()
         {
             return HistoricalPrice.OrderByDescending(p => p.Date).First();
+        }
+
+        public Price GetLastPriceBeforeDate(DateTime date)
+        {
+            return HistoricalPrice.Where(p => p.Date < date)
+                                  .OrderByDescending(p => p.Date)
+                                  .First();
         }
     }
 }
