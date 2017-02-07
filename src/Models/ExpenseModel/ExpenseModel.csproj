@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExpenseModel.cs" />
+    <Compile Include="Expense.cs" />
+    <Compile Include="ExpenseRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransactionRecord\TransactionRecord.csproj">
+      <Project>{8757A2CD-AC29-4B01-B7FC-5ADBABFBEDCB}</Project>
+      <Name>TransactionRecord</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

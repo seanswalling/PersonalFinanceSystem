@@ -8,6 +8,17 @@ namespace InvestmentModel
 {
     public class InvestmentRecord
     {
-        public List<Investment> Investments { get; set; }
+        public List<Investment> Investments { get; }
+
+        public InvestmentRecord(List<Investment> investments)
+        {
+            Investments = investments;
+        }
+
+        public void AddInvestment(Investment investment)
+        {
+            Investments.Add(investment);
+        }
+         
     }
 }

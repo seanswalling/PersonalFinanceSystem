@@ -8,7 +8,16 @@ namespace ExpenseModel
 {
     class Expense
     {
-        private DateTime _date;
-        private double _amount;
+        private DateTime Date { get; }
+        private double Amount { get; }
+        private string Description { get; set; }
+
+        public Expense(DateTime date, double amount, string description)
+        {
+            Date = date;
+            Amount = amount;
+            Description = description;
+        }
+
     }
 }
