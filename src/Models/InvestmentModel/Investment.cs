@@ -6,14 +6,16 @@ namespace InvestmentModel
 {
     public class Investment
     {
+        public int InvestmentId { get; }
         public int InvestmentNumber { get; }
         public Price InvestmentPrice { get; }
         public List<Price> HistoricalPrice { get; }
 
-        public Investment(Price investmentPrice, int investmentNumber)
+        public Investment(Price investmentPrice, int investmentNumber, int investmentId)
         {
             InvestmentPrice = investmentPrice;
             InvestmentNumber = investmentNumber;
+            InvestmentId = investmentId;
             HistoricalPrice = new List<Price>();
             AddPrice(investmentPrice);
         }

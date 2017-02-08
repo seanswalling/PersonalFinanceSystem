@@ -19,6 +19,11 @@ namespace InvestmentModel
         {
             Investments.Add(investment);
         }
+
+        public Investment GetInvestment(int id)
+        {
+            return Investments.Find(i => i.InvestmentId == id);
+        }
          
     }
 }
